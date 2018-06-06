@@ -6,6 +6,15 @@
 .btn {
     background-color: #2ed87b !important;
 }
+a {
+    color: #314555;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #26cc71;
+  text-decoration: none;
+}
 .btn:hover,
 .btn.hover,
 .btn:focus,
@@ -29,4 +38,8 @@
   color: #fff;
   background-color: #25c76f !important;
   border-color: #25c76f !important;
+}
+
+.card-body {
+    padding: 0.75rem;
 }
