@@ -16,3 +16,17 @@
   background-color: #25c76f !important;
   border-color: #25c76f !important;
 }
+
+.btn-coupon {
+    background-color: #00A84E !important;
+}
+.btn-coupon:hover,
+.btn-coupon.hover,
+.btn-coupon:focus,
+.btn-coupon.focus,
+.btn-coupon:active,
+.btn-coupon.active {
+  color: #fff;
+  background-color: #25c76f !important;
+  border-color: #25c76f !important;
+}
