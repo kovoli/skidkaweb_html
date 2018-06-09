@@ -6,6 +6,37 @@
 .btn {
     background-color: #2ed87b !important;
 }
+.btn.btn-o {
+  border-color: #2ed87b;
+  background-color: transparent !important;
+}
+.btn:hover,
+.btn.hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  color: #fff;
+  background-color: #25c76f;
+  border-color: #25c76f;
+}
+.btn.btn-link:hover,
+.btn.btn-link.hover,
+.btn.btn-link:focus,
+.btn.btn-link.focus,
+.btn.btn-link:active,
+.btn.btn-link.active {
+  background-color: transparent !important;
+  color: #25c76f;
+}
+.btn.btn-o:hover,
+.btn.btn-o.hover,
+.btn.btn-o:focus,
+.btn.btn-o.focus,
+.btn.btn-o:active,
+.btn.btn-o.active {
+  border-color: #25c76f;
+}
 a {
     color: #314555;
     text-decoration: none;
@@ -42,4 +73,59 @@ a:focus {
 
 .card-body {
     padding: 0.75rem;
+}
+
+/* Pagination */
+.page-pagination {
+  font-size: 13px;
+  margin: 20px auto;
+  text-align: center;
+}
+.page-pagination li {
+  display: inline;
+}
+.page-pagination a.page-numbers,
+.page-pagination .page-numbers.current {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0 13px;
+  line-height: 32px;
+  height: 36px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.page-pagination a.page-numbers {
+  border-color: #d3d9dd;
+  color: #576366;
+}
+.page-pagination .page-numbers.current,
+.page-pagination a.page-numbers:hover {
+  border-color: #2ed87b;
+  background-color: #2ed87b;
+  color: #fff;
+}
+
+.tags .badge {
+  margin-right: 8px;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: normal;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #b3bfc5;
+  margin-bottom: 12px;
+  -webkit-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.tags .badge:hover {
+  color: #fff;
+  background-color: #2ed87b;
 }
