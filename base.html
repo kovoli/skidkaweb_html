@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 
     <title>Hello, world!</title>
 
@@ -27,10 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarsExample07">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="blog_list.html">Блог</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
@@ -46,7 +49,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit"><i class="fas fa-search"></i></button>
         </form>
         </div>
       </div>
@@ -274,7 +277,7 @@
     <!-- Coupon list second -->
           <div class="card">
             <div class="card-body p-2">
-              <h4 class="mb-0 py-1 pl-1 float-left">Cкидки</h4>
+              <h4 class="mb-0 py-1 pl-1 float-left">Промокоды</h4>
               <button type="button" class="btn btn-o float-right">Success</button>
             </div>
           </div>
@@ -286,7 +289,7 @@
           <div class="card h-100">
 
             <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 200px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
+            <a href="#"><img class="py-1 d-block img-fluid" src="https://lorempixel.com/200/200/sports/" alt=""></a>
             </figure>
             <div class="card-body p-2">
               <h4 class="card-title text-center mb-0">
@@ -317,18 +320,21 @@
               <div class="row">
                   <div class="col-md-12 align-content-center">
 
-                      <a href="#"><img class="py-2 d-block mx-auto align-items-center img-fluid" src="aldi.jpg" alt=""></a>
+                      <a href="#"><img class="py-2 d-block mx-auto align-items-center img-fluid" src="https://lorempixel.com/200/200/sports/" alt=""></a>
 
                       <h3 class="text-center">Save 30% off New Domains Names</h3>
                       <p class="color-mid text-center">Not applicable to ICANN fees, taxes, transfers,or gift cards. </p>
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control text-center" value="https://github.com/zenorocha/clipboard.js.git" aria-describedby="basic-addon2">
+                        <input id="myInput" type="text" class="form-control text-center" value="https://github.com/zenorocha/clipboard.js.git" aria-describedby="promocode">
+
                         <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                          <button id="copy-button" class="btn btn-outline-secondary" type="button" onclick="myFunction()">
+                            <i class="fas fa-copy"></i>
+                          </button>
                         </div>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <a href="#" class="btn d-block ">Посетить магазин</a>
+                        <a href="http://www.skidkaweb.ru" class="btn d-block" target="_blank" style="color: #ffffff">Посетить магазин</a>
                     </div>
                   </div>
               </div>
@@ -406,102 +412,88 @@
             </div>
           </div>
 
-      <div class="row mt-3">
-        <!-- front header -->
+      <div class="row mt-3 ml-0 mr-0 owl-carousel">
 
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
-
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
-
-            </div>
-            <a href="#" class="text-center">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
+    <a href="#">
+      <div class="card" >
+        <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
         </div>
 
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
+          <div class="card-footer text-center">Все инструменты</div>
+      </div>
+    </a>
 
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
 
-            </div>
-            <a href="#" class="text-center text-dark">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
-        </div>
+    <div class="card" >
 
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
-
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
-
-            </div>
-            <a href="#" class="text-center text-dark">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
-        </div>
-
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
-
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
-
-            </div>
-            <a href="#" class="text-center text-dark">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
-        </div>
-
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
-
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
-
-            </div>
-            <a href="#" class="text-center text-dark">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
-        </div>
-
-      <div class="col-lg-2 col-md-4 mb-4">
-          <div class="card h-100">
-
-            <figure class="figure-img d-flex mx-auto align-items-center mt-3" style="height: 100px">
-            <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
-            </figure>
-            <div class="card-body p-2">
-
-            </div>
-            <a href="#" class="text-center text-dark">
-              <div class="card-footer">Ozon</div>
-            </a>
-          </div>
-        </div>
-        <!-- shops list end -->
-      <!-- row end -->
+      <div class="d-flex mx-auto align-items-center">
+      <a href="#">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
+      </a>
       </div>
 
+        <div class="card-footer text-center">Ozon</div>
+
+    </div>
+
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="download.png" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="https://lorempixel.com/400/200/sports/" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+    <div class="card" >
+      <div class="d-flex mx-auto align-items-center">
+        <img class="card-img d-block img-fluid py-1" src="80x80.jpeg" alt="Card image cap" style="height: 100px; width: 100px">
+      </div>
+      <a href="#" class="text-center text-dark">
+        <div class="card-footer">Ozon</div>
+      </a>
+    </div>
+
+
+  </div>
      <!-- Blog list second -->
           <div class="card">
             <div class="card-body p-2">
@@ -520,7 +512,7 @@
             <a href="#"><img class="py-1 d-block img-fluid" src="aldi.jpg" alt=""></a>
             </figure>
             <div class="card-body p-2">
-              <h4 class="card-title text-center mb-0">
+              <h4 class="card-title mb-0">
                 <a href="#">Item One Item One Item One Item One</a>
               </h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -569,8 +561,13 @@
         <p class="m-0 text-center text-white">Copyright © Your Website 2018</p>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/own.js"></script>
+
 </body>
 </html>
